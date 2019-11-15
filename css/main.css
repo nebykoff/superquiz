@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap");
+.sq {
+  font-family: 'Lato', sans-serif;
+  position: relative;
+  border: 1px solid #dadada;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.sq-progress {
+  -webkit-box-flex: 0;
+     -moz-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  padding: 18px 20px 18px 40px;
+  background: #4abac3;
+  border-radius: 8px 8px 0 0;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.sq-progress-line-wrapper {
+  background: rgba(0, 0, 0, 0.1);
+  height: 12px;
+  border-radius: 4px;
+  -webkit-box-flex: 1;
+     -moz-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin-right: 16px;
+}
+
+.sq-progress-line {
+  -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  position: relative;
+  background: repeating-linear-gradient(45deg, #fff, #fff 15px, #d7eeef 15px, #d7eeef 35px);
+  -webkit-transition: width 0.4s;
+  transition: width 0.4s;
+  width: 0;
+  height: 100%;
+}
+
+.sq-main {
+  padding: 30px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 350px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sq-header {
+  font-size: 24px;
+  line-height: 125%;
+}
+
+.sq label {
+  cursor: pointer;
+  min-width: 50%;
+  padding: 0 15px 15px 0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+}
+
+.sq label input[type=radio] {
+  cursor: pointer;
+}
+
+.sq label img {
+  display: block;
+}
+
+.sq-inputs {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.sq-inputs-column {
+  display: block;
+}
+
+.sq-inputs-img {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.sq-inputs-img label {
+  min-width: initial;
+}
+
+.sq-controls {
+  margin-top: auto;
+  text-align: center;
+}
+
+.sq-step, .sq-prev-btn {
+  display: none;
+}
+
+.sq-prev-btn::before {
+  content: '< ';
+}
+
+.sq-next-btn::after {
+  content: ' >';
+}
+
+.sq-btn {
+  outline: none;
+  text-decoration: none;
+  padding: 8px 24px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  -webkit-box-shadow: 0 6px 4px -4px #4abac3, inset 0 0 0 2px #4abac3;
+          box-shadow: 0 6px 4px -4px #4abac3, inset 0 0 0 2px #4abac3;
+  border-radius: 6px;
+  background-color: #4abac3;
+  -webkit-transition: background-color 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+.sq-hide {
+  display: none;
+}
+
+.sq .hs {
+  display: none;
+}
+
+.sq-message {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 8px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.sq-message-svg {
+  fill: #0aa440;
+  margin-bottom: 20px;
+}
+
+.sq-message-text {
+  font-size: 24px;
+  line-height: 150%;
+}
+
+.sq-last-step .sq-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sq-last-step-wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sq-submit-cont {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.sq-last-step-text {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.sq-btn-secondary {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+  color: #9b9b9b;
+}
+
+.sq input[type=text] {
+  color: #333;
+  font-family: "Fira Sans", sans-serif;
+  padding: 10px 14px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.4px;
+  height: 48px;
+  border: 2px solid #c4eff2;
+  border-radius: 6px;
+  background-color: #fff;
+  width: 200px;
+}
+
+@media screen and (max-width: 540px) {
+  .sq-inputs-img {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-align: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sq-inputs-img label {
+    margin-bottom: 20px;
+  }
+  .sq-inputs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sq-controls {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+       -moz-box-orient: vertical;
+       -moz-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .sq-controls .sq-btn {
+    border: 1px solid #dadada;
+    margin-bottom: 10px;
+  }
+}
+
+body, div, dl, dt, dd, ul, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset, img, abbr {
+  border: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ul li {
+  list-style: none;
+}
+
+caption, th {
+  text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+legend {
+  color: #000;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/*# sourceMappingURL=main.css.map */
